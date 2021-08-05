@@ -1,0 +1,56 @@
+/* Box Model Fix */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(233, 47%, 7%);
+}
+
+section {
+    width: 80vw;
+    max-width: 1110px;
+    display: flex;
+    gap: 30px;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+}
+
+article{
+    max-width: 540px;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h1 {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    /* font-family: 'Lexend Deca', sans-serif; */
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+p span {
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+aside{
+    background-image: url(images/image-header-desktop.jpg);
+    background-color: aqua;
+    margin-left: auto;
+    width: 540px;
+    border-radius: 0px 10px 10px 0px;
+}
